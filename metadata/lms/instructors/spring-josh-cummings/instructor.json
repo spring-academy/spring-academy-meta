@@ -1,0 +1,11 @@
+{
+  "id": "spring-josh-cummings",
+  "name": "Josh Cummings",
+  "slug": "josh-cummings",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/3627351",
+    "credentials": "Staff Engineer and Spring Security committer",
+    "github": "https://github.com/jzheaux"
+  }
+}

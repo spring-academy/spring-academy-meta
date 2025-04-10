@@ -1,0 +1,13 @@
+{
+  "id": "spring-carlton-schuyler",
+  "name": "Carlton Schuyler",
+  "slug": "carlton-schuyler",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/81879",
+    "credentials": "Staff Solutions Architect, Software Engineer",
+    "github": "https://github.com/cschuyle",
+    "linkedin": "https://linkedin.com/in/cschuyle",
+    "website": "https://dragnon.com"
+  }
+}

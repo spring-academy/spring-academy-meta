@@ -1,0 +1,13 @@
+{
+  "id": "spring-corneil-du-plessis",
+  "name": "Corneil du Plessis",
+  "slug": "corneil-du-plessis",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/466422?v=4",
+    "credentials": "Staff Engineer 1, Organizer of Jozi-JUG",
+    "github": "https://github.com/corneil",
+    "linkedin": "https://linkedin.com/in/corneil",
+    "twitter": "https://twitter.com/corneil"
+  }
+}

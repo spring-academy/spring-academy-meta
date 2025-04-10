@@ -1,0 +1,1 @@
+Software engineer with the following general skill set: Java 8+, Could Foundry, microservices, SQL, REST, AWS, Spring, Git, Maven, BPMS, Database Design, PL/SQL, Oauth, elasticsearch, CI/CD, AWS, DOD secret

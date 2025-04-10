@@ -1,0 +1,9 @@
+{
+  "id": "spring-certified-professional-2023",
+  "slug": "spring-certified-professional-2023",
+  "title": "Spring Certified Professional Exam",
+  "status": "live",
+  "order": 10,
+  "entitlements": ["pro"],
+  "settings": {}
+}

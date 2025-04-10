@@ -1,0 +1,14 @@
+{
+  "id": "spring-josh-long",
+  "name": "Josh Long",
+  "slug": "josh-long",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/54473",
+    "credentials": "Spring Developer Advocate, open-source hacker, book/video author and speaker",
+    "github": "https://github.com/joshlong",
+    "linkedin": "https://linkedin.com/in/joshlong",
+    "twitter": "https://twitter.com/starbuxman",
+    "website": "https://joshlong.com"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "spring-chris-bono",
+  "name": "Chris Bono",
+  "slug": "chris-bono",
+  "status": "live",
+  "settings": {
+    "avatar": "https://www.gravatar.com/avatar/7f21f065aca411d04724f61ea6de33c4?s=400",
+    "credentials": "Staff Engineer 1",
+    "github": "https://github.com/onobc",
+    "linkedin": "https://www.linkedin.com/in/bonochris",
+    "twitter": "https://twitter.com/chris_onobc"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "spring-certified-professional-2023",
+  "slug": "spring-certified-professional-2023",
+  "title": "Spring Certified Professional",
+  "status": "live",
+  "steps": [
+    { "type": "course", "id": "spring-brasb" },
+    { "type": "course", "id": "spring-introduction" },
+    { "type": "course", "id": "spring-essentials" },
+    { "type": "course", "id": "spring-boot" },
+    { "type": "test", "id": "spring-certified-professional-2023" }
+  ],
+  "settings": {}
+}

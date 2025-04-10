@@ -1,0 +1,9 @@
+ancestors:
+  - https://spring.academy
+  - https://*.spring.academy
+  - https://labs.spring.academy
+  - https://*.labs.spring.academy
+  - https://strigo.spring.academy
+  - https://*.strigo.spring.academy
+index: https://spring.academy
+cookies_domain: spring.academy

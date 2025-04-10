@@ -1,0 +1,14 @@
+{
+  "id": "spring-dan-vega",
+  "name": "Dan Vega",
+  "slug": "dan-vega",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/349507",
+    "credentials": "Spring Developer Advocate",
+    "github": "https://github.com/danvega",
+    "linkedin": "https://www.linkedin.com/in/danvega",
+    "twitter": "https://twitter.com/therealdanvega",
+    "website": "https://www.danvega.dev/"
+  }
+}

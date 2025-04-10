@@ -1,0 +1,13 @@
+{
+  "id": "spring-soby-chacko",
+  "name": "Soby Chacko",
+  "slug": "soby-chacko",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/827682",
+    "credentials": "R&D Software Engineer at Broadcom",
+    "github": "https://github.com/sobychacko",
+    "linkedin": "https://www.linkedin.com/in/sobychacko/",
+    "twitter": "https://twitter.com/sobychacko"
+  }
+}

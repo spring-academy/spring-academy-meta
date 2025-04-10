@@ -1,0 +1,13 @@
+{
+  "id": "spring-joe-moore",
+  "name": "Joe Moore",
+  "slug": "joe-moore",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/13995",
+    "credentials": "Senior Staff Engineer, Software Consultant, XP nerd",
+    "github": "https://github.com/joemoore",
+    "linkedin": "https://linkedin.com/in/josephlmoore",
+    "twitter": "https://twitter.com/joem"
+  }
+}

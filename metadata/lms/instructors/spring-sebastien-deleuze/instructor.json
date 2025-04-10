@@ -1,0 +1,14 @@
+{
+  "id": "spring-sebastien-deleuze",
+  "name": "Sébastien Deleuze",
+  "slug": "sebastien-deleuze",
+  "status": "live",
+  "settings": {
+    "avatar": "https://pbs.twimg.com/profile_images/770349799036026880/snZVTigC_400x400.jpg",
+    "credentials": "Spring Framework core committer",
+    "github": "https://github.com/sdeleuze",
+    "linkedin": "https://www.linkedin.com/in/deleuze/",
+    "twitter": "https://twitter.com/sdeleuze",
+    "website": "https://seb.deleuze.fr"
+  }
+}

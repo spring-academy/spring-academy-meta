@@ -1,0 +1,1 @@
+I am a software engineer at VMware, working as the project lead of Spring Batch. I am an OSS advocate and I have contributed to several open source projects. I enjoy spending time with my family and friends, reading, running and playing chess!

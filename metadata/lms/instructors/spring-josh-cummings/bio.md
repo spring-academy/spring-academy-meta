@@ -1,0 +1,1 @@
+Josh has been a software engineer for over 15 years building enterprise applications across multiple industries. He has long been passionate about application security and loves opportunities to mentor and to learn from others about security awareness. When Josh isn't hacking away at code, he is either running, playing basketball, camping, or reading a Brandon Sanderson novel.

@@ -1,0 +1,13 @@
+{
+  "id": "spring-glenn-renfro",
+  "name": "Glenn Renfro",
+  "slug": "glenn-renfro",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/695673?v=4",
+    "credentials": "Staff Engineer 1, Board of Directors for Devnexus",
+    "github": "https://github.com/cppwfs",
+    "linkedin": "https://linkedin.com/in/cppwfs",
+    "twitter": "https://twitter.com/cppwfs"
+  }
+}

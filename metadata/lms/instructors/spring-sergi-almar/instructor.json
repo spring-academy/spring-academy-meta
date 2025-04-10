@@ -1,0 +1,13 @@
+{
+  "id": "spring-sergi-almar",
+  "name": "Sergi Almar",
+  "slug": "sergi-almar",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/122109",
+    "credentials": "Java and Spring Software Engineer, Spring I/O organizer",
+    "github": "https://github.com/salmar",
+    "linkedin": "https://www.linkedin.com/in/salmar/",
+    "twitter": "https://twitter.com/sergialmar"
+  }
+}

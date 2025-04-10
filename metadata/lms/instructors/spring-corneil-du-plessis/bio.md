@@ -1,0 +1,3 @@
+I'm a VMware engineer that joined the Spring Cloud Data Flow a team in early 2022. I have been a Spring user for nearly 20 years.
+
+In 1992 I launched the Johannesburg C/C++ user group and developed a C++ course to satisfy my need to teach and fill a gap in market. I have been putting Java applications into production since 1999 and I have been an organizer of Jozi-JUG since 2011 and speaking at Java / Kotlin conferences since 2015.

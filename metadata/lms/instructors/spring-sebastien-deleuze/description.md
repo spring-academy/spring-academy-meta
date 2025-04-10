@@ -1,0 +1,1 @@
+Based in Lyon (France), Sébastien is a Spring Framework core committer at VMware. He led the introduction of Kotlin and GraalVM native image in Spring. WebAssembly believer since 2016, he is also Kotlin Google Developer Expert and an ex MiXiT conference staff.

@@ -1,0 +1,3 @@
+I've been writing software since before it was cool. I have experience with most modern programing languages, web, mobile, and cloud. I love solving hard technical problems and enjoy helping other engineers learn from my mistakes. While I am an introvert my friends will tell you the moment I step up to the white board it takes 12 people and a front-end loader to get me to sit back down.
+
+When I am not building new tools or helping customers modernize their systems I can usually be found four wheeling around the mountains of Colorado and Utah.

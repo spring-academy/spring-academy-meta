@@ -1,0 +1,3 @@
+I'm a veteran of product and consulting companies where I've been writing and delivering software for longer than I care to admit. For the past four years I've been in the business of helping practitioners learn Java and Spring! I've been around the JVM since the very early days. In addition to Java, I've delivered code in JRuby, Clojure, Scala, and Kotlin.
+
+When I'm not trying to learn another programming language (or a human language, for that matter), you might find me curating my collection of translations of The Little Prince, reading a book, or getting to know the lay of the land somewhere far from home.

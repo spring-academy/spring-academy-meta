@@ -1,0 +1,8 @@
+.envrc*
+.kubeconfig*
+./tmp
+.DS_Store
+
+# IDEs
+.idea
+/downstream

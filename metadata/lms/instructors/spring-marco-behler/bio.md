@@ -1,0 +1,1 @@
+Marco works as a Developer Advocate at JetBrains in Munich, Germany. Through guides, tweets, books, and talks, Marco loves to share everything he knows about writing and building awesome software – knowledge he acquired from a decade of consulting in the Java and Spring ecosystems.

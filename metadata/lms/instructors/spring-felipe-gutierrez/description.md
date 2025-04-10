@@ -1,0 +1,1 @@
+Over 30 years of IT experience, during which he has developed programs for companies in multiple vertical industries, such as government, retail, healthcare, education, and banking. Book Author from Apress. Currently writing the Pro Spring Boot 3rd Edition.

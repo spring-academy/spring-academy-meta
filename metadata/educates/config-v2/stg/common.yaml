@@ -1,0 +1,9 @@
+ancestors:
+  - https://spring-staging.academy
+  - https://*.spring-staging.academy
+  - https://labs.spring-staging.academy
+  - https://*.labs.spring-staging.academy
+  - https://strigo.spring-staging.academy
+  - https://*.strigo.spring-staging.academy
+index: https://spring-staging.academy
+cookies_domain: spring-staging.academy

@@ -1,0 +1,13 @@
+{
+  "id": "spring-guy-barrette",
+  "name": "Guy Barrette",
+  "slug": "guy-barrette",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/1854284",
+    "credentials": "Technical Content Developer at VMware Tanzu",
+    "github": "https://github.com/guybarrette",
+    "linkedin": "https://www.linkedin.com/in/guybarrette",
+    "twitter": "https://twitter.com/guybarrette"
+  }
+}

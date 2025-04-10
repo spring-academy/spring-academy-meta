@@ -1,0 +1,1 @@
+Josh has been the first Spring Developer Advocate since 2010. Josh is a Java Champion, an author of 6 books, a producer of best-selling video training, an open-source contributor, a podcaster, and a YouTuber.

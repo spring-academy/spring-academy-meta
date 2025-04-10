@@ -1,0 +1,10 @@
+{
+  "id": "spring-marco-behler",
+  "name": "Marco Behler",
+  "slug": "marco-behler",
+  "status": "live",
+  "settings": {
+    "avatar": "https://raw.githubusercontent.com//spring-academy-assets/main/instructors/spring-marco-behler/marco-behler.png",
+    "credentials": "Developer Advocate, JetBrains"
+  }
+}

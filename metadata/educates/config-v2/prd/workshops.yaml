@@ -1,0 +1,216 @@
+portals:
+  - name: "spr-guides"
+    defaults:
+      reserved: 1
+      expires: "90m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 1
+    workshops:
+    - name: spring-academy-guides-upgrade-from-spring-boot-2x-to-3x
+    - name: spring-academy-guides-upgrading-boot-jdk-8-to-17
+    - name: spring-academy-guides-upgrade-boot-2x-to-3x-in-practice
+    - name: spring-academy-guides-workshop-automating-upgrades
+  - name: "spr-io-guides"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 1
+    workshops:
+    - name: spr-io-messaging-with-rabbitmq
+    - name: spr-io-building-an-application-with-spring-boot
+    - name: spr-io-accessing-data-jpa
+    - name: spr-io-rest-service
+  # - name: "spr-tap-guides"
+  #   defaults:
+  #     reserved: 1
+  #     expires: "60m"
+  #     orphaned: "5m"
+  #   sessions:
+  #     max: 180
+  #     anonymous: 1
+  #   workshops:
+  #   - name: spr-tap-update-boot-app-in-cloud
+  #     refresh: 24h
+  - name: "spr-eng-guides"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 1
+    workshops:
+    - name: spr-eng-guides-go-fast-with-spring-boot-3-1
+    - name: spr-eng-guides-what-is-new-spring-boot-3-2
+    - name: spr-eng-guides-restclient-httpinterfaces
+    - name: spr-eng-guides-spring-ai
+  - name: "spr-sample"
+    defaults:
+      reserved: 0
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+    workshops:
+    - name: spr-sample-first-lab
+    - name: spr-sample-nth-lab
+    - name: spr-sample-docker-in-docker
+    - name: spr-sample-multi-terms
+    - name: spr-sample-short-timeout
+      expires: "3m"
+      deadline: "5m"
+    - name: spr-sample-hugo
+    - name: spr-sample-spring-boot-docker-compose
+  - name: "spr-boot-native"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 1
+    workshops:
+    - name: spr-boot-native-first-lab
+    - name: spr-boot-native-migrating-existing-app
+  - name: "spr-cloud-stream"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+    workshops:
+    - name: spr-cloud-stream-lab-1-workshop
+    - name: spr-cloud-stream-create-source
+    - name: spr-cloud-stream-middleware
+    - name: spr-cloud-stream-stream-bridge
+    - name: spr-cloud-stream-processor
+    - name: spr-cloud-stream-sink
+    - name: spr-cloud-stream-e2e-tests
+  - name: "spr-upgrade-25-27"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 2
+    workshops:
+    - name: spr-upgrade-25-27-01-kgs
+    - name: spr-upgrade-25-27-02-usbv
+    - name: spr-upgrade-25-27-03-usd
+    - name: spr-upgrade-25-27-04-unsd
+    - name: spr-upgrade-25-27-05-gitc
+    - name: spr-upgrade-25-27-06-uss
+    - name: spr-upgrade-25-27-07-rtt
+    - name: spr-upgrade-25-27-08-dpre
+  - name: "spr-upgrade-27-31"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 2
+    workshops:
+    - name: spr-upgrade-27-31-01-kgs
+    - name: spr-upgrade-27-31-02-mrc
+    - name: spr-upgrade-27-31-03-usbv
+    - name: spr-upgrade-27-31-04-usd
+    - name: spr-upgrade-27-31-05-unsd
+    - name: spr-upgrade-27-31-06-uss
+    - name: spr-upgrade-27-31-07-rtt
+    - name: spr-upgrade-27-31-08-dpre
+  - name: "spr-batch"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 2
+    workshops:
+    - name: spr-batch-initializr-workshop
+    - name: spr-batch-creating-jobs-workshop
+    - name: spr-batch-testing-your-job-workshop
+    - name: spr-batch-understanding-job-instances-workshop
+    - name: spr-batch-first-step
+    - name: spr-batch-reading-writing-data
+    - name: spr-batch-processing-data
+    - name: spr-batch-scoped-components
+    - name: spr-batch-fault-tolerance-restarting-failed-jobs
+    - name: spr-batch-fault-tolerance-skipping
+    - name: spr-batch-fault-tolerance-retrying
+  - name: "spr-oauth2"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 2
+    workshops:
+    - name: spr-oauth2-unsecured-api
+    - name: spr-oauth2-spring-defaults
+    - name: spr-oauth2-bearer-jwt
+      refresh: "9h"
+    - name: spr-oauth2-accessing-auth
+      refresh: "9h"
+    - name: spr-oauth2-auth-anywhere
+      refresh: "9h"
+    - name: spr-oauth2-validating-audience
+      refresh: "9h"
+    - name: spr-oauth2-processing-failures
+    - name: spr-oauth2-request-authorization
+      refresh: "9h"
+    - name: spr-oauth2-method-authorization
+      refresh: "9h"
+    - name: spr-oauth2-data-authorization
+    - name: spr-oauth2-auth-server
+      refresh: "9h"
+  - name: "spr-brasb"
+    defaults:
+      reserved: 1
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+      anonymous: 2
+    workshops:
+    - name: spr-brasb-initializr
+    - name: spr-brasb-test-first
+    - name: spr-brasb-first-rest-endpoint
+      expires: "90m"
+    - name: spr-brasb-spring-data
+      expires: "100m"
+    - name: spr-brasb-create-post
+      expires: "90m"
+    - name: spr-brasb-get-list
+      expires: "100m"
+    - name: spr-brasb-simple-security
+      expires: "100m"
+    - name: spr-brasb-implementing-put
+      expires: "120m"
+    - name: spr-brasb-implementing-delete
+      expires: "90m"
+  - name: "spr-modulith"
+    defaults:
+      reserved: 0
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 180
+    workshops:
+    - name: spr-modulith-introduction
+    - name: spr-modulith-fundamentals
+    - name: spr-modulith-designing-modules
+    - name: spr-modulith-integration
+    - name: spr-modulith-testing
+    - name: spr-modulith-jmolecules
+    - name: spr-modulith-documentation
+    - name: spr-modulith-splitup

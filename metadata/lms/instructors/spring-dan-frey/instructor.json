@@ -1,0 +1,13 @@
+{
+  "id": "spring-dan-frey",
+  "name": "Dan Frey",
+  "slug": "dan-frey",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/946892",
+    "credentials": "Staff Engineer II at VMware Tanzu",
+    "github": "https://github.com/dmfrey",
+    "linkedin": "https://www.linkedin.com/in/dmfrey",
+    "twitter": "https://twitter.com/dmfrey"
+  }
+}

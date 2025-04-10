@@ -1,0 +1,1 @@
+I have been developing software for nearly three decades professionally (and longer than that for the pure geekiness of it). I am the author of Spring in Action (now in its 6th edition), Build Talking Apps for Alexa, Spring Boot in Action, and Modular Java.

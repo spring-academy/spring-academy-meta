@@ -1,0 +1,12 @@
+{
+  "id": "spring-bob-mcnees",
+  "name": "Bob McNees",
+  "slug": "bob-mcnees",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/86265089",
+    "credentials": "Engineering Manager, Spring Framework",
+    "github": "https://github.com/robertmcnees",
+    "linkedin": "https://www.linkedin.com/in/bmcnees/"
+  }
+}
