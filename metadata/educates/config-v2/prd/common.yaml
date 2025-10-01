@@ -5,5 +5,7 @@ ancestors:
   - https://*.labs.spring.academy
   - https://strigo.spring.academy
   - https://*.strigo.spring.academy
+  - https://*.vmware.com
+  - https://*.broadcom.com
 index: https://spring.academy
 cookies_domain: spring.academy
