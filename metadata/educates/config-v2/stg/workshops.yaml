@@ -198,3 +198,13 @@ portals:
       expires: "2h"
     - name: spr-guides-spring-modulith-deep-dive
       expires: "10h"
+    - name: spr-io-rest-service
+  - name: "spr-guides-enterprise-v2"
+    defaults:
+      reserved: 0
+      expires: "60m"
+      orphaned: "5m"
+    sessions:
+      max: 30
+    workshops:
+    - name: spring-academy-guides-enterprise-app-advisor

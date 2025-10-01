@@ -33,3 +33,6 @@ workshop_bundles:
   - name: "spr-guides-v2"
     url: "ghcr.io//spring-guides-workshop-manifests"
     version: "latest"
+  - name: "spr-guides-enterprise-v2"
+    url: "ghcr.io//spring-guides-enterprise-workshop-manifests"
+    version: "latest"
