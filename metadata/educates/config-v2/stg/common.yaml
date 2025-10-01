@@ -5,5 +5,7 @@ ancestors:
   - https://*.labs.spring-staging.academy
   - https://strigo.spring-staging.academy
   - https://*.strigo.spring-staging.academy
+  - https://*.vmware.com
+  - https://*.broadcom.com
 index: https://spring-staging.academy
 cookies_domain: spring-staging.academy
