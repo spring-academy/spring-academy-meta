@@ -1,0 +1,108 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: educates-workshop-puller
+  namespace: ${TENANT_NAMESPACE}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: educates-workshop-puller
+subjects:
+- kind: ServiceAccount
+  name: educates-workshop-puller
+  namespace: ${TENANT_NAMESPACE}
+roleRef:
+  kind: ClusterRole
+  name: educates-all
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: educates-workshop-puller
+  namespace: ${TENANT_NAMESPACE}
+spec:
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: educates-workshop-puller
+          volumes:
+          - name: resources
+            emptyDir: {}
+          securityContext:
+            fsGroup: 1000
+          initContainers:
+          - name: extract-resources
+            image: ghcr.io/vmware-tanzu/carvel-docker-image
+            volumeMounts:
+            - name: resources
+              mountPath: /resources
+            command:
+              - /bin/bash
+              - -c
+              - |
+                #TODO - make this generic pulling from a list of repos
+                for repo in spring-enterprise-guides; do
+                  echo "==== fetching $repo"
+                  imgpkg pull -i ghcr.io/${TENANT_NAMESPACE}/$repo:${ENVIRONMENT} -o $repo || true
+                  cp -r $repo/educates-resources /resources/$repo || true
+                done
+                chmod -R ug+rw /resources # ensure the written files can be modified by the next container
+                ls -lah /resources
+          containers:
+          - name: apply-resources
+            image: bitnami/kubectl
+            volumeMounts:
+            - name: resources
+              mountPath: /resources
+            command:
+              - /bin/bash
+              - -c
+              - |
+                ls -lah /resources
+                for dir in /resources/*; do
+                  echo "==== Processing $dir"
+                  dir_name=$(basename "$dir")
+                  unset SUBSTITUTE_VARS
+                  SUBSTITUTE_VARS=$(sed s/"=.*$"/""/g < /resources/$dir_name/env.${ENVIRONMENT} | sed s/"export "/""/g | awk '{ print $1 }' | tr '\n' ' ') || true
+                  echo ${SUBSTITUTE_VARS}
+                  source /resources/$dir_name/env.${ENVIRONMENT} || true
+                  # loop over each valid yaml file found in delete folder
+                  for f in /resources/$dir_name/delete/*.yaml; do 
+                    # TODO - workaround until envusbst is available in kubectl image
+                    #      - for all the variables defined in the env file, replace them manually using sed
+                    for varToReplace in ${SUBSTITUTE_VARS} ; do
+                      echo "sed -i s/"\${${varToReplace}}"/"$(echo ${!varToReplace})"/g ${f}"
+                      sed -i s/"\${${varToReplace}}"/"$(echo ${!varToReplace})"/g ${f}
+                    done
+                    echo "=== Start Fully Resolved ${f} ==="
+                    cat ${f}
+                    echo "=== End Fully Resolved ${f} ==="
+                  done
+                  # loop over each valid yaml file found in apply
+                  for f in /resources/$dir_name/apply/*.yaml; do 
+                    # TODO - workaround until envusbst is available in kubectl image
+                    #      - for all the variables defined in the env file, replace them manually using sed
+                    for varToReplace in ${SUBSTITUTE_VARS} ; do
+                      echo "sed -i s/"\${${varToReplace}}"/"$(echo ${!varToReplace})"/g ${f}"
+                      sed -i s/"\${${varToReplace}}"/"$(echo ${!varToReplace})"/g ${f}
+                    done
+                    echo "=== Start Fully Resolved ${f} ==="
+                    cat ${f}
+                    echo "=== End Fully Resolved ${f} ==="
+                  done
+                  
+                  # TODO - remove once envsubst is in the kubectl image
+                  kubectl delete -f /resources/$dir_name/delete || true
+                  kubectl apply -f /resources/$dir_name/apply || true
+
+                  ###### Replace workaround above with these once envsubst is available in the image
+                  #for f in /resources/$dir_name/delete/*.yaml; do /resources/envsubst "${SUBSTITUE_VARS}" < $f | kubectl apply -f -; done || true
+                  #for f in /resources/$dir_name/apply/*.yaml; do /resources/envsubst "${SUBSTITUE_VARS}" < $f | kubectl apply -f -; done || true
+                done
+          restartPolicy: Never
+      backoffLimit: 1
