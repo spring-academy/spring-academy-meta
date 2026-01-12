@@ -9,11 +9,11 @@ release:
 
 deploy: deploy-instructors deploy-pages deploy-paths deploy-tests
 
-deploy-instructors:
-	metadata/deploy.sh deploy-instructors
-
 deploy-pages:
 	metadata/deploy.sh deploy-pages
+
+deploy-instructors:
+	metadata/deploy.sh deploy-instructors
 
 deploy-downstream-courses:
 	metadata/deploy.sh deploy-downstream-courses
