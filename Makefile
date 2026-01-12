@@ -7,7 +7,7 @@
 #        as part of a Release
 release:
 
-deploy: deploy-instructors deploy-pages deploy-paths deploy-tests
+deploy: deploy-pages deploy-instructors deploy-paths deploy-tests
 
 deploy-pages:
 	metadata/deploy.sh deploy-pages
