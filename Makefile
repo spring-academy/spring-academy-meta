@@ -7,21 +7,18 @@
 #        as part of a Release
 release:
 
-deploy: deploy-pages deploy-instructors deploy-paths deploy-tests
+deploy: deploy-pages deploy-instructors deploy-paths
 
 deploy-pages:
-	metadata/deploy.sh deploy-pages
+	metadata/lms/deploy.sh deploy-pages
 
 deploy-instructors:
-	metadata/deploy.sh deploy-instructors
+	metadata/lms/deploy.sh deploy-instructors
 
 deploy-downstream-courses:
-	metadata/deploy.sh deploy-downstream-courses
-
-deploy-tests:
-	metadata/deploy.sh deploy-tests
+	metadata/lms/deploy.sh deploy-downstream-courses
 
 deploy-paths:
-	metadata/deploy.sh deploy-paths
+	metadata/lms/deploy.sh deploy-paths
 
-deploy-local: deploy-instructors deploy-pages deploy-downstream-courses deploy-tests deploy-paths
+deploy-local: deploy-instructors deploy-pages deploy-downstream-courses deploy-paths

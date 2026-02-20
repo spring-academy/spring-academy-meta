@@ -4,8 +4,7 @@ set -o nounset
 set -o pipefail
 if [[ "${TRACE-0}" == "1" ]]; then set -o xtrace; fi
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-META_DIR="$(cd "${SCRIPT_DIR}/lms" && pwd)"
+META_DIR="$(dirname "$0")"
 
 PENGUINCTL_APIURL="${PENGUINCTL_APIURL:-https://penguin-spring.test/api/v1}"
 PENGUINCTL_APITOKEN="${PENGUINCTL_APITOKEN:-47f6c9c6-f6e4-4e54-ba63-c3f387ff76b9|oKxR3Lx2k78kKm2x3HECDqAU2slFBcYyXaSFQNRy}"
