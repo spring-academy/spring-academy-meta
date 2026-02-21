@@ -46,6 +46,7 @@ deploy-pages() {
 
     echo "=== Applying pages"
     for pageDir in "${META_DIR}"/pages/*; do
+        echo "=== processing variable substitution for ${pageDir}"
         envsubst < "${pageDir}/content.template.md" > "${pageDir}/content.md"
         echo "=== penguinctl apply page -f $(pwd)/${pageDir}/page.json"
         penguinctlcmd apply page -f "$(pwd)/${pageDir}/page.json"
