@@ -4,6 +4,38 @@ metadata:
   name: educates-workshop-puller
   namespace: ${TENANT_NAMESPACE}
 ---
+apiVersion: rbac.authorization.k8s.io/v1 
+kind: ClusterRole
+metadata:
+  name: educates-all
+  namespace: ${TENANT_NAMESPACE}
+rules:
+- apiGroups:
+  - training.educates.dev
+  resources:
+  - trainingportals
+  - workshops
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - rbac.authorization.k8s.io
+  resources:
+  - clusterrolebindings
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
@@ -55,7 +87,7 @@ spec:
                 ls -lah /resources
           containers:
           - name: apply-resources
-            image: bitnami/kubectl
+            image: bitnami/kubectl:latest
             volumeMounts:
             - name: resources
               mountPath: /resources
