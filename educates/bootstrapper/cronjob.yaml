@@ -78,7 +78,7 @@ spec:
               - -c
               - |
                 #TODO - make this generic pulling from a list of repos
-                for repo in spring-enterprise-guides; do
+                for repo in spring-guides spring-enterprise-guides; do
                   echo "==== fetching $repo"
                   imgpkg pull -i ghcr.io/${TENANT_NAMESPACE}/$repo:${ENVIRONMENT} -o $repo || true
                   cp -r $repo/educates-resources /resources/$repo || true
