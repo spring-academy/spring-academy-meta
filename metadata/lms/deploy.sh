@@ -34,7 +34,7 @@ penguinctlcmd() {
 
 deploy-instructors() {
     echo "=== Applying instructors"
-    penguinctlcmd apply instructors --path="${META_DIR}/instructors"
+    penguinctlcmd apply instructors --path="$(pwd)/${META_DIR}/instructors"
 }
 
 deploy-pages() {
