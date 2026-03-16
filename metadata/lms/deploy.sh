@@ -70,4 +70,10 @@ deploy-paths() {
     done
 }
 
+
+deploy-tags() {
+    echo "=== Applying tags"
+    penguinctlcmd apply tags -f "$(pwd)/${META_DIR}/tags/tags.json"
+}
+
 "$@"
