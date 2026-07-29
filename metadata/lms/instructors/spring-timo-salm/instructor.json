@@ -1,0 +1,13 @@
+{
+  "id": "spring-timo-salm",
+  "name": "Timo Salm",
+  "slug": "timo-salm",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/52704922",
+    "credentials": "Master Solutions Architect at VMware Tanzu by Broadcom",
+    "github": "https://github.com/timosalm",
+    "linkedin": "https://www.linkedin.com/in/timosalm/",
+    "twitter": "https://x.com/salmto"
+  }
+}
