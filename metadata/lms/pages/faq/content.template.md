@@ -130,7 +130,7 @@ cd ~/exercises
 git remote -v
 ```
 
-You can also see a list of codebase [GitHub repositories here](https://github.com/search?q=org%3A+course+code&type=repositories).
+You can also see a list of codebase [GitHub repositories here](https://github.com/search?q=org%3Aspring-academy++course+code&type=repositories).
 
 In each course code repository you will see individual commits representing the `<start>` and `<end>` of each lab.
 
