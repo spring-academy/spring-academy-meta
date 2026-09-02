@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     name: Deploy to Staging
+    environment: staging
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
