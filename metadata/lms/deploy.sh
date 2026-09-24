@@ -15,8 +15,8 @@ export PENGUINCTL_APITOKEN
 export PENGUIN_USEDOCKER
 
 penguinctl-docker() {
-    echo "penguinctl version $(docker run --rm ghcr.io/spring-academy/penguinctl:latest --version)"
-    docker run --rm -v "$(pwd)":"$(pwd)" ghcr.io/spring-academy/penguinctl:latest --url="${PENGUINCTL_APIURL}" --token="${PENGUINCTL_APITOKEN}" $@
+    echo "penguinctl version $(docker run --rm ghcr.io/vmware-tanzu-learning/penguinctl:latest --version)"
+    docker run --rm -v "$(pwd)":"$(pwd)" ghcr.io/vmware-tanzu-learning/penguinctl:latest --url="${PENGUINCTL_APIURL}" --token="${PENGUINCTL_APITOKEN}" $@
 }
 
 penguinctl-local() {
