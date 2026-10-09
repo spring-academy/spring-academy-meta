@@ -9,4 +9,3 @@ This repo includes the metadata common across courses, guides and learning paths
 - Pages (independent of course or guide content)
 - Learning Paths
 - Exam/Certification References
-- Educates Training Portal and Workshop references
