@@ -1,0 +1,12 @@
+{
+  "id": "spring-paul-wiggett",
+  "name": "Paul Wiggett",
+  "slug": "paul-wiggett",
+  "status": "live",
+  "settings": {
+    "avatar": "https://avatars.githubusercontent.com/u/8677171",
+    "credentials": "Staff Engineer at VMware Tanzu by Broadcom",
+    "github": "https://github.com/mrporcles",
+    "linkedin": "https://www.linkedin.com/in/paulwiggett"
+  }
+}
